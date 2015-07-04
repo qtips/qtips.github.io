@@ -1,0 +1,33 @@
+# Permalinks
+#
+# Use of `relative_permalinks` ensures post links from the index work properly.
+permalink:           pretty
+relative_permalinks: true
+
+# Setup
+title:               Qoders Blog
+tagline:             ""
+paginate:            2
+baseurl:             ""
+
+# Assets
+#
+# We specify the directory for Jekyll so we can use @imports.
+sass:
+  sass_dir:          _sass
+  style:            :compressed
+
+# About/contact
+author:
+  name:              Qadeer Ahmad Khan
+  url:               https://no.linkedin.com/in/qadeerahmad
+  email:             ahm.qadeer@gmail.com
+
+# Custom vars
+version:             2.0.0
+github:
+  repo:              https://github.com/poole/poole
+pages_list:
+  About: '/about'
+  Archive: '/archive'
+  Feed: '/atom.xml'
