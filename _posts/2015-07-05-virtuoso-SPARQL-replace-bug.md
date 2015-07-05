@@ -12,7 +12,7 @@ where {}
 #Result: Å-XYZ-%20%28-DEF-%29
 {% endhighlight %}
 
-However, when using nested REPLACE statements with an outer replace having a regex with `.`, the replace function "jumps" back one character where the match is found :
+However, when using nested `REPLACE` statements with an outer replace having a regex with `.`, the replace function "jumps" back one character where the match is found :
 
 {% highlight sparql %}
 select REPLACE(
