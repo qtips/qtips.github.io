@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Virtuoso SPARQL Replace Function Bug and Workaround
+enabledisqus: true
 ---
 
 Running the following SPARQL for replacing `%c3%85` with the letter `Å` runs as expected
