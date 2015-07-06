@@ -1,1 +1,0 @@
-This blog is made using [Poole](https://github.com/poole/poole)
