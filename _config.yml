@@ -8,7 +8,7 @@ title:               Qoders Blog
 tagline:             ""
 paginate:            2
 baseurl:             ""
-highlighter:         rouge
+highlighter:         pygments
 
 # Assets
 #
