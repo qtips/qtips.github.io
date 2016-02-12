@@ -12,12 +12,12 @@ Graph databases are suited for highly connected data. These are the reasons I fo
 3. **Easier data modelling** – since you are not bound by a predefined structure, you can also model your data easily.
 4. **SQL query pain** – query syntax becomes complex and large as the joins increase.
 
-Points 2 to 4 are easy to agree with, at least with in my experience. The thing that caught my eye was the better performance feature of graph databases. I wanted understand what kind issues the joins are causing. This is not explained in detail in the book. To understand this I will look into how joins work in relational databases and why multiple joins cause performance issues in another [post]({% post_url 2016-01-06-back-to-basics-how-do-rdms-do-join %}) .
+Points 2 to 4 are easy to agree with, at least with in my experience. The thing that caught my eye was the better performance feature of graph databases. I wanted understand what kind issues the joins are causing. This is not explained in detail in the book. To understand this I will look into how joins work in relational databases and why multiple joins cause performance issues in another [post]({% post_url 2016-01-06-RDMS-join %}) .
 
+## When RDMS is enough
+It seems natural to also include use cases where graph databases are not well suited compared to RDMS.
 
-Its natural to also include use cases where graph databases are not well suited compared to RDMS.
-
-When doing bulk and mass queries over a single table or tables requiring few joins, like
+When doing bulk and mass queries over a single table or tables requiring few joins, RDMS is a better choice. Consider the following examples
 {% highlight sql %}
 SELECT * FROM Person WHERE name='Tom'
 SELECT * FROM Person WHERE age>10 AND age<20
