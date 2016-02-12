@@ -15,7 +15,7 @@ where {}
 
 However, when using nested `REPLACE` statements with an outer replace having a regex with `.`, the replace function "jumps" back one character where the match is found :
 
-{% highlight sparql %}
+{% highlight sql %}
 select REPLACE(
              REPLACE("%c3%85-XYZ-%20%28-DEF-%29","%C3%85", "Å", 'i'),
           "%..(%..)*", "?", 'i')
