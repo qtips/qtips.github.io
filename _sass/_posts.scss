@@ -59,3 +59,26 @@
     }
   }
 }
+
+.PageNavigation {
+  font-size: 14px;
+  display: block;
+  width: auto;
+  overflow: hidden;
+}
+
+.PageNavigation a {
+  display: block;
+  margin: 1em 0;
+  width: 48%;
+}
+
+.PageNavigation .next {
+  text-align: right;
+  float: right;
+
+}
+.PageNavigation .prev {
+  float: left;
+
+}

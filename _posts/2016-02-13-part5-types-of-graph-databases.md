@@ -3,6 +3,8 @@ layout: post
 title: Making sense of graph databases part 5 - Types of graph databases
 ---
 
+_Main article can be found [here]({% post_url 2016-02-13-graph-databases %})._
+
 When doing my research on how graph databases work, I eventually discovered that there are at least two kinds of graph databases that differ on how they store and process graph data. I was surprised because I thought that there could not be many optimal ways of creating a graph database, because I was comparing them to relational database theory which has been standardized for quite some time. This simply means that graph databases are still a little bleeding edge. In this post I will present the different types of graph databases and say a little about how they work.
 
 

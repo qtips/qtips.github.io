@@ -3,6 +3,8 @@ layout: post
 title: Making sense of graph databases part 2 - How do RDMS store and retrieve data with indexes
 
 ---
+ _Main article can be found [here]({% post_url 2016-02-13-graph-databases %})._
+
 
 RDMS stores data record on disc I/O heap in blocks. To efficiently find the records, indexes are used which help locate the data, or else the system has to search every record until it finds what you are looking for. An index is any data structure that takes the value of one or more columns and finds the rows (record) with that value "quickly". Index can be compared to index back in a book; the key-words are sorted alphabetically and each keyword has corresponding page number(s) to where the word can be located.
 

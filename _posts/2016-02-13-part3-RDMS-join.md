@@ -3,6 +3,9 @@ layout: post
 title: Making sense of graph databases part 3 - How do RDMS do join?
 ---
 
+ _Main article can be found [here]({% post_url 2016-02-13-graph-databases %})._
+
+
 A DBMS can join in many different ways and two of the most common ones are nested loop join and hash join.  All joins are performed two tables at a time, even if more tables are described in the query. This means that in cases with more than two join-tables, intermediary steps are required because the result of first join must be used joined with the third. This again impacts the performance.
 
 ## Nested Loop Join

@@ -3,7 +3,7 @@
 // Super lightweight (HTML-wise) blog pagination. `span`s are provide for when
 // there are no more previous or next posts to show.
 
-.pagination {
+  .pagination {
   overflow: hidden; // clearfix
   margin: 0 -1.5rem 1rem;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
