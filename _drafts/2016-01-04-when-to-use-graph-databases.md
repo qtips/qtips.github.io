@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Part 1 - When to use graph databases, and when not to
+title: Making sense of graph databases part 1 - When to use graph databases, and when not to
 ---
 
 Intuitively, you would answer... graphs, but a bit more detailed information by people that have done some research would be nice. The Graph Database Wikipedia [article](https://en.wikipedia.org/wiki/Graph_database) says surprisingly little about this issue (feb 2016)! It only lists a huge amount of databases. This indicates that graph databases probably still are a little bleeding edge. But the Google results gave a lot of results for the Graph database Neo4j. They have in fact given out the O’Reilly book Graph Database which can be freely acquired from [Neo4j website](neo4j.com/books/graph-databases/). Although the book has huge focus on how Neo4j works, it still gives a good overview of what graphs in general and when the model is appropriate.

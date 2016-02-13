@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Part 4 - why are graph databases more efficient than RDMS on connected data
+title: Making sense of graph databases part 4 - Why are graph databases more efficient than RDMS on connected data
 ---
 In a [previous post]({% post_url 2016-01-04-when-to-use-graph-databases %}), it was argued that graph databases are superior to RDMS on connected data because, RDMS has to do lots of joins. In this post we will look into why. 
   

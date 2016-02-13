@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Part 2 - the basics - How do RDMS store and retrieve data with indexes
+title: Making sense of graph databases part 2 - How do RDMS store and retrieve data with indexes
 
 ---
 
