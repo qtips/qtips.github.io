@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Types of Graph Databases
+title: Graph DBs - Types of Graph Databases (Part 5)
 ---
 
 The three types of Graph databases
