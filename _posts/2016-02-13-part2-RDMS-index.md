@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Making sense of graph databases part 2 - How do RDMS store and retrieve data with indexes
+enabledisqus: true
+
 
 ---
  _Main article can be found [here]({% post_url 2016-02-13-graph-databases %})._

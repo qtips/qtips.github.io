@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Making sense of graph databases part 3 - How do RDMS do join?
+enabledisqus: true
+
 ---
 
  _Main article can be found [here]({% post_url 2016-02-13-graph-databases %})._

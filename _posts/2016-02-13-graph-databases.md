@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Making sense of graph databases
+enabledisqus: true
 ---
 
 Having worked with Virtuoso graph database for half a year I was excited to be given opportunity to try something new. Although my work with the database involved mainly querying with SPARQL and some graph modeling, it caught enough interest that I wanted to understand a bit more. My main question was how, exactly, does Graph databases perform better than relational databases for graphed data. Is it how it stores the data that makes it so good? Or are there just some algorithm-magic that makes graph databases super slick. While pondering over these question, I understood how little I knew about graph databases. In fact I don’t even know when to use graph databases (over relational databases). This resulted in several blog posts:

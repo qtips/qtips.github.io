@@ -1,6 +1,8 @@
 ---
 layout: post
 title: Making sense of graph databases part 5 - Types of graph databases
+enabledisqus: true
+
 ---
 
 _Main article can be found [here]({% post_url 2016-02-13-graph-databases %})._
