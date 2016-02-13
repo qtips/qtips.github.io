@@ -2,11 +2,11 @@
 layout: post
 title: Making sense of graph databases part 4 - Why are graph databases more efficient than RDMS on connected data
 ---
-In a [previous post]({% post_url 2016-01-04-when-to-use-graph-databases %}), it was argued that graph databases are superior to RDMS on connected data because, RDMS has to do lots of joins. In this post we will look into why. 
+In a [previous post]({% post_url 2016-02-13-part1-when-to-use-graph-databases %}), it was argued that graph databases are superior to RDMS on connected data because, RDMS has to do lots of joins. In this post we will look into why.
   
 So, why are joins not a problem for Neo4j? The neat thing about Neo4j is that it does not use indexes at all. Instead, graph nodes are linked to its neighbours directly in the storage. This property of reference is called *index-free adjacency*. So, when Neo4j performs a graph query for retrieving a sub-graph, it simply has to follow the links in the storage – no index lookups are needed. The cost of each node-to-node traversal is `O(1)` – so if we are doing a friend-of-a-friend look-up to find, for example, all indirect friends of Alice, the total cost would be proportional to total number of friends in the final result  – `O(m)` where `m` is the total number of Alice’s indirect friends. Even if the data (number of nodes) increases, if the total number of friends are still the same, the cost will still by `O(m)`. This is because Neo4j first “jumps” to the Alice node using some kind of search or index, and then it simply visits the relating nodes by following the links, until the query is satisfied [^1].
 
-To compare the graph database approach with RDMS we will go through a simple example. In a [previous post]({% post_url 2016-01-06-RDMS-join %}), join types used in the comparison below were examined, together with their algorithms, which the Big-O number used in this post are related to.
+To compare the graph database approach with RDMS we will go through a simple example. In a [previous post]({% post_url 2016-02-13-part3-RDMS-join %}), join types used in the comparison below were examined, together with their algorithms, which the Big-O number used in this post are related to.
 
 Assume that we have tables Employees (E), Departments (D) and Payments (P).
 
