@@ -34,3 +34,4 @@ gems:
   - jekyll-paginate
   - jekyll-gist
 #  - jekyll-last-modified-at
+  - jekyll-redirect-from
