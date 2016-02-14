@@ -2,16 +2,29 @@
 //
 // Styles for managing the structural hierarchy of the site.
 
+img.logo-large {
+  display: inline;
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+
+}
+img.linkedin{
+//  float: right
+}
 img.twitter {
- width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  float: right;
+  // margin-left: 50px
 }
-img.linkdin {
+
+img.logo-small {
+  display: inline;
   width: 20px;
-  height: 15px;
-  float: right;
+  height: 20px;
+  background-color: #ffffff;
+  margin: 0 0 0 0;
+
 }
+
+
 
 

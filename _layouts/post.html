@@ -8,6 +8,7 @@ layout: default
   {{ content }}
 </article>
 
+{% comment %}
 <!--{% if site.related_posts != empty %}-->
 <!--<aside class="related">-->
   <!--<h2>Related Posts</h2>-->
@@ -25,6 +26,11 @@ layout: default
   <!--</ul>-->
 <!--</aside>-->
 <!--{% endif %}-->
+{% endcomment %}
+
+<!-- Tweet this link -->
+<a href="https://twitter.com/share" class="twitter-share-button">Tweet</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
 <div class="PageNavigation">
     {% if page.previous.url %}

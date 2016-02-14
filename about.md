@@ -12,3 +12,11 @@ I still have a interest in machine learning, in particular automating tasks, and
 I started blogging because I recalled how much I learned when writing essays or long papers back when I was in school, so my blog is actually just a way to learn
  new stuff, and to share it with others. Your comments and opinions are appreciated.
 
+Get in touch:
+
+<a href="https://no.linkedin.com/pub/qadeer-ahmad/10/a76/949"><img class="logo-large linkdin" src="/assets/linkedin.svg" ></a>
+<a href="https://twitter.com/khqadeer85"><img class="logo-large twitter" src="/assets/twitter.svg" ></a>
+
+
+
+
