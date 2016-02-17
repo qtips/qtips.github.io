@@ -20,7 +20,8 @@ The two types I found were:
   * This allows of using features like ontologies and reasoning using OWL.
 * Often, they store all data in a single relational table with columns _subject_, _predicate_, _object_ corresponding to [RDF](https://en.wikipedia.org/wiki/Resource_Description_Framework) triples. Sometimes, a _graph_ column is also added to relate triples to a named graph.
 * Virtuoso falls under this category.
-* Triple stores often generates huge tables. To traverse a the graph the database has to do self-joins, which can kill performance. Therefore clever tuning and indexing is required.
+* Triple stores often generates huge tables. To traverse a the graph the database has to do self-joins, which can kill performance.
+  * Since triple stores use joins to connect graph nodes, they have same [disadvantages]({% post_url 2016-02-13-part4-rdms-vs-graph %}) as relational databases on graph data. Therefore clever tuning and indexing is required, but the performance is still not comparable with native graph databases (I have not found a performance comparison, though).
   * One approach (which is used by Virtuoso) is to use B+ trees together with [bitmap based indexing](https://en.wikipedia.org/wiki/Bitmap_index) on different combinations of the 4 columns - this can generate upto 16 indexes for the single table. To avoid that the indexes take more space than the actual data, duplicate rows are often reused, together with compression of index files. Compression works is extremely well on bitmap index! [^1]
 
 ## Native graph
