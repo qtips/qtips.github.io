@@ -28,8 +28,8 @@ where *e's* are employees and *p's* are payments.
 
  To find the payments with Neo4j, first a search is conducted to find the departments `x` and `y`. Using hash indexing this gives `O(1)`. Then the graph is “walked” to find all the relevant payments, by first visiting all employees in the departments, and through them, all relevant payments. If we assume that the number of payment results are `k`, then, as mentioned in the Graph Database book [^1], this approach takes `O(k)`. We now have the following costs for our query:
 
-* nested loop join: `O(2 * |E| * |P|)`
-* hash join: `O(2 +|E|+2*|E|+|P|)`
+* nested loop join: `O(|E| * |P|)`
+* hash join: `O(|E|+|P|)`
 * Neo4j: `O(k)`
 
 Two conclusions can be drawn from these:
