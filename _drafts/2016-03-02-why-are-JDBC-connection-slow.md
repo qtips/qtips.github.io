@@ -29,7 +29,7 @@ TODO for this post:
 1. Kjøre JDBC kall med Connection Pooling fra glassfish server 1t
 2. Sammenligne tall med og uten pooling, og med http request
 3. Gjør samme test med en annen database eks sqlite eller postgresql
-4. Skrive: kode ekspempler, sammenligne tid med profilering slått av, sammenligne tid med profilering på på hovedklasser, sammenligne med http pooling på og av, konklusjon
+4. Skrive: kode ekspempler, skrive hva det betyr at noe tar lang tid i datasammenheng, sammenligne tid med profilering slått av, sammenligne tid med profilering på på hovedklasser, sammenligne med http pooling på og av, konklusjon
 5. Fylle ut lenker
 
 
