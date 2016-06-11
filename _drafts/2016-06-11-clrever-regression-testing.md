@@ -3,7 +3,7 @@ layout: post
 title: Regression Testing
 ---
 
-My new client and project has been alive quite a time and has involved many people and consultants going in and out. It also has a large code base and typically, these combinations entail code beeing written in different styles making it harder to read and maintain. However, involving many people can also result in rise of new and smart solution to common problems IF the work the environment facilitates innovation. This is an entire subject in itself, which I will not dwell into here, but rather, I will describe one smart approach that has been developed in the project which I learned recently involving regression testing.
+My new client and project has been alive quite a time and has involved many people and consultants going in and out. It also has a large code base and typically, these combinations entail code beeing written in different styles making it harder to read and maintain. However, involving many people can also result in rise of new and smart solution to common problems IF the work environment facilitates innovation. This is an entire subject in itself, which I will not dwell into here, but my client is one that actively supports innovation from its employees. I will describe one smart approach that has been developed in the project which I learned recently involving regression testing.
 
 The client consists of around 8-9 software development teams, each responsible for their own business module. The module my team is working on consists mainly of a large library which contains complex business logic. Other teams are allowed to commit code into our components if they need to do minor changes as a result of changes in their own module. To allow such behaviour in a complex and large code base requires thoroghly testing, and the normal unit and integration tests are not enough. Regression testing is essential to ensure quality, but can be expensive and boring if done manually before each release. We need a clever way of automated regression testing which is au pair with manual test!
 
@@ -13,7 +13,8 @@ Our goal with the regression test is to ensure that there are no unintended chan
 
 Our approach is to compare the results with a previous version; We first run the automated processing on a production version of the library. Then we run it on the development version _with the same data set_ as the previous run. Finally we compare the data sets to see what have changes and create a report of the differences. Because the data sets are the same, the differences should either be expected due to new functionality or are a result of bugs.
 
-The method is illustrated in the figure: <FIGRURE>
+The method is illustrated in the figure:
+![Regression testing method][regression_testing]
 
 The main benefit of this method is that since we operate on deltas or difference from the previous versions we are freed from creating and maintaining assertions. This approach can thus be used continiously without requiring updates after each development cycle. On the other hand, we must involve at least one domain expert/case worker to verify what the differences mean. The verifyier can focus solely on the actual differences, instead of going through all data which requires much less work. In addition, we aggregate the type of differences to create a summary, for example "340 customers had a change in table A column 2". This summary makes the verification process even easier. Overall, we get a great thorogh regreassion test cheaply!
 
@@ -21,10 +22,4 @@ To make this approach even greater we should make it automated, which we are in 
 
  The ultimate goal would be to involve the regression test in our continious integration cycle. On each build, the test would run with a very small subset of data, while in weekends we would run with normal data set. The problem is that we cannot fully automate the final analysis part. However, we can add some general assertions that operate on the difference summaries - by for example making limits on the number of differences. Instead of assertions, we can do it even more simple by plotting the number of differences per type in a graph. For each test the graph is updated making it clear if a commit resulted in an increase in difference.
 
-* Beskriv motivasjon for regresjontest
-* Beskriv hvordan den funker med figur
-* Beskriv hvordan resultatet brukes av funksjonelle
-* Beskiv svakheter overordnet
-* Konkluder med å forklare hvorfor det er så lurt!
-
-I learned a very smart way of doing a continious and through regression test of main parts of your your code base.
+ [regression_testing]: {{site.url}}/assets/regression_testing.png "Regression test method"
