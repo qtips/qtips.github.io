@@ -1,6 +1,7 @@
 ---
 layout: post
 title: A Clever Regression Testing Approach
+enabledisqus: true
 ---
 My new client and project has been alive quite a time and has involved many people and consultants going in and out. It also has a large code base and typically, these combinations entail code being written in different styles making it harder to read and maintain. However, involving many people can also result in rise of new and smart solution to common problems IF the work environment facilitates innovation. This is an entire subject in itself, which I will not dwell into here, but my client is one that actively supports innovation from its employees. I will describe one smart approach that has been developed in the project that I learned recently for regression testing. This testing approach allows us to regression test most important parts of our code base and involves a lot of test data, but without requiring too much manual verification
 
