@@ -28,12 +28,14 @@ The ultimate goal would be to involve the regression test in our continuous inte
 
 ## To summarize...
 So, to be able to use the approach described you should have:
+
 * A batch/script/program that is able to call most part of business functionality just as a user would through its user interface, with correct steps in correct order. In my experience, most systems where users perform tasks in steps, like caseworker application, often already have an automated processing of steps.
 * Ability to access a lot of test data for regression testing, and loading it to multiple databases.
 * A batch/script/program that performs comparison of the two datasets and produces reports. This part should be cleverly designed so that it does not become a bottleneck, for example by supporting parallel processing and doing all I/O before starting comparison.
 * Access to verifiers that can assess the results of the comparison.
 
 This approach gives us high value low cost regression test across a large code base
+
 * the test involves large parts of our code using real and lots of test data
 * the test code requires little maintenance because of its nature
 * we need to involve few verifiers
