@@ -1,6 +1,6 @@
 ---
 layout: post
-title: A Clever Regression Testing Approach
+title: A Cheap and Painless Mass Regression Testing Approach
 enabledisqus: true
 ---
 My new client and project has been alive quite a time and has involved many people and consultants going in and out. It also has a large code base and typically, these combinations entail code being written in different styles making it harder to read and maintain. However, involving many people can also result in rise of new and smart solution to common problems IF the work environment facilitates innovation. This is an entire subject in itself, which I will not dwell into here, but my client is one that actively supports innovation from its employees. I will describe one smart approach that has been developed in the project that I learned recently for regression testing. This testing approach allows us to regression test most important parts of our code base and involves a lot of test data, but without requiring too much manual verification
@@ -11,7 +11,7 @@ The client consists of around 8-9 software development teams, each responsible f
 ## System Background
 The system we are working on is a caseworker application, where a lot of rules, validations and calculations are performed in a particular order. Our module handles an important and complex part of the case processing. The changes in each development cycle (agile, 3 week sprints) are mostly in the library because it contains the case processing logic. However, we also have some batches that use the library for automating business processes, which are more stable with regards to changes.
 
-## The cheap and clever regression test
+## The cheap and painless regression test
 Our goal with the regression test is to ensure that there are no unintended changes introduced during the development cycle. If we can perform case processing on only our module and verify that the results are as expected, we have reached our goal. Since we support automated processing through batches, we are able to trigger the most important case processing logic in correct order. The challenge lies in verification. A manual verification would involve domain experts/case workers to go through the result of the automated processing and verify that it is as expected. This procedure is feasible for a small number of customers because it requires a lot of time. As an alternative, we could write application that goes through the result and performs some assertions, but then we have to maintain it and keep it up to date.
 
 Our approach is a different one, which is to compare the automated processing results with a previous version; we first run the automated processing on a production version of the library. Then we run it on the development version _with the same initial data set_ as the previous run. Finally we compare the data sets to see what have changes and create reports of the differences. Because the initial data sets are the same, the differences should either be expected due to new functionality or are a result of bugs.
