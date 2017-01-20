@@ -15,7 +15,7 @@ I started blogging because I recalled how much I learned when writing essays or 
 
 Get in touch:
 
-<a href="https://no.linkedin.com/pub/qadeer-ahmad/10/a76/949"><img class="logo-large linkdin" src="/assets/linkedin.svg" ></a>
+<a href="https://www.linkedin.com/in/qadeer-ahmad-khan"><img class="logo-large linkdin" src="/assets/linkedin.svg" ></a>
 <a href="https://twitter.com/khqadeer85"><img class="logo-large twitter" src="/assets/twitter.svg" ></a>
 
 
