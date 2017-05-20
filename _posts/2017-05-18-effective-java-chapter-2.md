@@ -41,4 +41,4 @@ Commons sources of memory leaks and obolete references:
 
 * Whenever a class **manages its own memory**, the programmer should be alert for memory leaks.
 * Forgotten **caches** entries. Consider using `WeakHashMap` for caches which only holds items if there is an outside reference to the entry.
-* **Listeners** and **callbacks** due to lack of de-registration. Also here a `WeakHashMap` can be used
+* **Listeners** and **callbacks** due to lack of de-registration. Also here a `WeakHashMap` can be used.
