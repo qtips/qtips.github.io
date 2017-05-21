@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Effective Java
+title: Effective Java - Creating and Destroying Objects
 enabledisqus: true
 ---
 
