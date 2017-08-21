@@ -1,11 +1,12 @@
 ---
 layout: post
-title: Effective Java - Method Common to All Objects
+title: Effective Java - Methods Common to All Objects
+tags: effectivejava
 enabledisqus: true
 ---
 
 ## Methods Common to All Objects (Ch 3)
-This is a short summary of Joshua Blochs book [Effective Java](https://www.amazon.com/Effective-Java-2nd-Joshua-Bloch/dp/0321356683) chapter 3. I have only included items that are relevant for myself.
+This is a short summary of Joshua Blochs book [Effective Java](https://www.amazon.com/Effective-Java-2nd-Joshua-Bloch/dp/0321356683) chapter 3. I have only included items that I find relevant.
 
 ### The general `equals()` contract (item 8)
 The equals contract describes the equivalence relation as:

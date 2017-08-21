@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Effective Java - Creating and Destroying Objects
+tags: effectivejava
 enabledisqus: true
 ---
 
 ## Creating and Destroying Objects (Ch 2)
-This is a short summary of Joshua Blochs book [Effective Java](https://www.amazon.com/Effective-Java-2nd-Joshua-Bloch/dp/0321356683) chapter 2. I have only included items that are relevant for myself.
+This is a short summary of Joshua Blochs book [Effective Java](https://www.amazon.com/Effective-Java-2nd-Joshua-Bloch/dp/0321356683) chapter 2. I have only included items that I find relevant.
 
 ### Static Factories (item 1)
 Some advantages of static factories vs constructors:
