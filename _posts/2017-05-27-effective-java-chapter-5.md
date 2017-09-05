@@ -27,8 +27,25 @@ o1.add("a string");
 Because of these differences, arrays and generics do not mix well, and it is illegal to create generic arrays (e.g `new List<E>[]`). Arrays provide runtime safety but not compile time, and vice versa with generics. General advice is to replace arrays with lists when you find you self mixing them. However, if you cannot use lists for example due to performance, there are workarounds, see Item 26.
 
 ### Bounded wildcards - extend and super (Item 28)
+Consider 
+{% highlight java %}
+public List<Number> test(List<Number> il ) {
+        ...
+}
+{% endhighlight %}
+ 
+calling the method with `test(new ArrayList<Integer>())` will give compilation error because `List<Integer>` is considered a a completely different type than `List<Number>`. Changing the signature to use bounded wildcards will fix this:
+ 
+{% highlight java %}
+public List<Number> test(List<? extends Number> il )
+{% endhighlight %}
 
-* Mnemonic for remembering bounded wildcard: **PECS - producer-extends, consumer-super**
+Note however that this is perfectly valid:
+{% highlight java %}
+new ArrayList<Number>().add(Integer.valueOf(1)); // boxing is used only for example. 
+{% endhighlight %}
+
+* When to use `extend` and when to use `super`? Mnemonic for remembering bounded wildcard: **PECS - producer-extends, consumer-super**
   * For example for a stack method `pushAll(srcCollection)` the parameter srcCollection produces elements that are used by the stack, hence the method parameter should use `<? extends T>`.
   * On the other hand, a stack method `popAll(destCollection)` the parameter destCollection consumes elements in the stack, hence the method parameter should use `<? super T>`.
 * Do not use wildcard types as return types!
