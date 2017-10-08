@@ -19,6 +19,8 @@ code {
 pre {
   margin-top: 0;
   margin-bottom: 1rem;
+  white-space: pre-wrap;
+  overflow-x: auto;
 }
 
 pre code {
@@ -39,7 +41,6 @@ pre code {
 
   pre {
     margin-bottom: 0;
-    overflow-x: auto;
   }
 
   .lineno {
