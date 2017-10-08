@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Creating an aggregated SonarAube report for multiple Maven projects
+title: Creating an aggregated SonarQube report for multiple Maven projects
 enabledisqus: true
 ---
 
