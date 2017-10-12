@@ -30,8 +30,10 @@ pages_list:
   Archive: '/archive'
   Feed: '/atom.xml'
 
-gems:
+plugins:
   - jekyll-paginate
   - jekyll-gist
 #  - jekyll-last-modified-at
   - jekyll-redirect-from
+  - jekyll-seo-tag
+
