@@ -5,7 +5,7 @@ permalink: about/
 ---
 
 <img class="me" src="/assets/me.jpg" >
-I am a Software Engineer residing in Norway currently working as a consultant at [Bouvet](http://www.bouvet.no/en/).
+I am a Software Engineer and founder of [Ainiq](http://www.ainiq.no) who lives and works in Norway.
 I have worked mostly with backend and integration solutions, but my main interest is rather broad: I am driven by innovative ways of making solutions to problems.
 In my [university](http://www.ntnu.edu/) years I was particularly interested in machine learning and wrote a [thesis](http://www.idi.ntnu.no/~alfw/papers/sea2010-CAMF.pdf) about using it on Android (1.6).
 I still have an interest in machine learning, in particular automating complex tasks and processes using machine learning methods, and I hope to one day work within these fields.
