@@ -20,7 +20,7 @@ The main disadvantage of using _only_ static factories (e.g. with a private cons
 ### Builders instead of constructors with many parameters (item 2)
 Calling a constructor with many parameters can be cumbersome as it requires looking at the method declaration to understand what the parameters represent. This makes both reading and calling such a constructor difficult.
 
-*One alternative* to this is to construct an object using a parameterless constructor, and then use setters to set the required fields (the JavaBean pattern). The drawback with this approach is that the object can be in an inconsistent state while the invariant are being set. In addition, since you are providing setters, the objects are not mutable making thread safety difficult.
+*One alternative* to this is to construct an object using a parameterless constructor, and then use setters to set the required fields (the JavaBean pattern). The drawback with this approach is that the object can be in an inconsistent state while the invariant are being set. In addition, since you are providing setters, the objects are mutable making thread safety difficult.
 
 Builders are a second alternative with the best from both worlds. A builder first "collects" the parameters in a readable and compact way, and then instantiate the object by first validating that the invariants are ok.
 
