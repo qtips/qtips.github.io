@@ -1,4 +1,4 @@
 <script>
-    if (!(window.location.host.startsWith("localhost")) && (window.location.protocol != "https:"))
+    if (!(window.location.host.startsWith("localhost") || (window.location.host.startsWith("127.0.0.1"))) && (window.location.protocol != "https:"))
         window.location.protocol = "https";
 </script>
